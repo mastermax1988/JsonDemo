@@ -1,14 +1,8 @@
 package nqgy2.sep.jsondemo;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
-import com.google.gson.stream.JsonReader;
-import java.io.Reader;
 
 public class Demo1JsonVonHand {
 
@@ -30,5 +24,7 @@ public class Demo1JsonVonHand {
 
     //hier wird null zurückgegeben, da der json-String die Variable to nicht enthält
     System.out.println(parsedObject.get("to"));
+    //wirft eine exception, da das kein valider JSON-String ist
+    //System.out.println(JsonParser.parseString("hier steht kein json"));
   }
 }
