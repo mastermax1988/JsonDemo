@@ -1,7 +1,6 @@
 package nqgy2.sep.jsondemo;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import nqgy2.sep.jsondemo.messages.ComplexMessage;
 import nqgy2.sep.jsondemo.messages.SimpleMessage;
 
